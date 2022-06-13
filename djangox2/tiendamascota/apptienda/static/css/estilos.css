@@ -1,0 +1,23 @@
+body bg color{background-color: yellow;
+}
+
+.caja1 {
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+
+}
+
+video{
+    width: 100%;
+}
+main{
+    width: 80%;
+    margin: auto;
+}
+.contenedor-video{
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+    border: 3px solid red;
+}

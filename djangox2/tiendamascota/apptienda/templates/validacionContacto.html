@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/perro3.jpg"/>
+    <title>Validacion</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+  <link href="css/bootsrap.min.css" type="text/css"rel= "stylesheet">
+  <style>
+      
+  </style>
+  <script>
+    
+
+function CambiaColor(a)
+        {
+            a.style.background = "yellow";
+        }
+
+
+        function Mover(obj)
+        {
+            obj.innerHTML="Que tenga un buen dia";
+            obj.style.background="green";
+           
+        }
+
+        function MoverFuera(obj)
+        {
+            obj.innerHTML="¡Gracias por contactarnos!";
+            obj.style.background= "#FCFF33";
+            
+        }
+        
+
+
+  </script>
+
+</head>
+
+<body style="background-color:#FFC433;">
+    
+  
+
+  <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <br>
+   
+    
+    <!-- logo -->
+    <a class="navbar-brand" href="#">
+      {% load static %}
+      <img src="{% 'img/perro3.jpg' %}" width="30" height="30" alt="">
+    </a>
+    
+    <!-- enlaces -->
+    <div class="collapse navbar-collapse" id="opciones">   
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'index' %}" target="_blank">Principal</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'somos' %}" target="_blank">Quienes Somos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'galeria' %}" target="_blank">Galeria</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'formulario' %}" target="_blank">formulario</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'formularioContacto' %}" target="_blank">Contacto</a>
+          <a</a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'api' %}" target="_blank">Dias festivos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'ventaproductos' %}" target="_blank"> ventas </a>
+        </li>           
+      </ul>
+      
+    </div>
+  </nav>
+
+    <div class="container">
+
+      <hr> 
+    
+      <h3><font color="green">Muchas Gracias vuelva pronto.</font></h3>
+      <div onmouseover="Mover(this)" onmouseout="MoverFuera(this)"
+         style= "background-color: #FCFF33; width: 300px; height: 80px;  
+          padding: 20px; left: 40cm;">
+           ¡Gracias por la espera.!
+       </div>
+    <di>
+        
+
+    </form>
+    <hr>
+    <hr>
+    <hr>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div>
+                    <img class="img-fluid" src="{%  static 'img/grupo.jpg' %}" alt="" width="1150" >
+                </div>
+                <div class="col-12 col-sm-6">
+                    <br><br><br><strong class="titulo">tienda D y M</strong>
+                    <hr>
+                    <strong>
+      
+                      <hr>
+                      <p33 class="color">
+                       </p33>
+                    </strong>
+                </div>
+      
+      
+            </div>
+      
+      
+        </div>
+      
+      </section>
+  </div>
+</div>
+<footer>
+  <br> <br>
+  <br>  <br>
+  <br>  <br>
+  <br>  <br> 
+  <br>  <br>
+  <br>  <br>
+  <br>  <br>
+  <br>  <br>
+  <br>  <br>
+  <footer style="background-color:brown">
+
+  <div class="row col-12">
+      <div class="col-lg-1">
+          <img src="{% static 'img/bed30ddfa5d434e827c775ac9a3b0d38.jpg' %}" alt="logoBookStop" width="60px">
+      </div>
+      <div class="col-lg-1">
+         
+      </div>
+      <div class="col-lg-1">
+          
+      </div>
+      <div class="col-lg-1">
+          
+      </div>
+      <div class="col-lg-2">
+          
+      </div>
+      <br>
+
+
+      <div class="col-lg-5">
+          <strong>Síguenos</strong>
+          <br><br>
+          <div class="row">
+              <img src="{% static 'img/face1.jpg' %}" alt="" width="30px" height="30px"
+                  style=" margin-left: 15px;">
+              <img src="{% static  'img/twitter.jpg' %}" alt="" width="30px" height="30px" style=" margin-left: 10px;">
+              <img src="{% static 'img/insta1.jpg' %}" alt="" width="30px" height="30px" style=" margin-left: 10px;">
+
+          </div>
+      </div>
+
+
+      <div class="col-lg-4">
+
+          <strong>Contacto</strong>
+          <br><br>
+          <div class="row">
+              <img src="{% static 'img/location.jpg' %}" alt="" width="20px" height="20px"
+                  style="margin-right: 10px; margin-left: 15px;">
+              <p>Av.Galaxia 2900, Maipú</p>
+          </div>
+          <div class="row">
+              <img src="{% static 'img/wasap1.jfif' %}" alt="" width="20px" height="20px"
+                  style="margin-right: 10px; margin-left: 15px;">
+              <p>92330989</p>
+          </div>
+          <div class="row">
+              <img src="{% static 'img/correo.jpg' %}" alt="" width="20px" height="20px"
+                  style="margin-right: 10px; margin-left: 15px;">
+              <p>matiasjoel0612@gmail.com y di.jimenezp@duocuc.cl</p>
+          </div>
+          <br><br><br>
+          
+          
+
+          <p>&copy; D y M - 2022</p>
+      </div>
+  </div>
+</footer>
+    
+</body>
+</html>
